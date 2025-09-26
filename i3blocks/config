@@ -1,0 +1,59 @@
+# Global settings
+separator=true
+separator_block_width=18
+markup=pango
+#font=MesloLGS Regular 10
+
+[cpu]
+label=  <span color="#f9e7e7">CPU: </span>
+command=~/.config/i3blocks/cpu_usage.sh
+interval=5
+color=#f9e7e7
+[memory]
+label=  <span color="#f9e7e7">RAM: </span>
+command=free -h | awk '/^Mem/ { print $3 " / " $2 }'
+interval=5
+color=#f9e7e7
+
+[disk]
+label=  <span color="#f9e7e7">Disk: </span>
+command=df -h / | awk 'NR==2 { print $4 " free" }'
+interval=60
+color=#f9e7e7
+
+[volume]
+label=  <span color="#f9e7e7"> Vol: </span>
+command=amixer get Master | awk -F'[][]' 'END{ print $2 }'
+#command=pamixer --get-volume
+interval=1
+signal=5
+color=#f9e7e7
+
+[battery]
+label=  <span color="#f9e7e7">Batt: </span>
+command=acpi | cut -d "," -f 2,3 | tr -d " "
+interval=30
+color=#f9e7e7
+
+[network]
+label=  <span color="#f9e7e7"> Net: </span>
+command=ip route get 1.1.1.1 | awk '{print $7}'
+interval=10
+color=#f9e7e7
+
+[bandwidth]
+label=<span color="#f9e7e7">Tx:Rx </span>
+command=~/.config/i3blocks/bandwidth
+interval=1
+INTERFACE=enp6s0
+INLABEL=↓
+OUTLABEL=↑
+color=#f9e7e7
+#TREAT_UNKNOWN_AS_UP=0
+
+[time]
+label=   
+command=date '+%a %d %b  %I:%M %p '
+interval=6
+color=#f9e7e7
+
