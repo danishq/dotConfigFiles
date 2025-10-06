@@ -5,7 +5,7 @@ font pango:Victor Mono 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id sh -c "sleep 1"
-exec "feh --bg-fill ~/gdrive-local/Pictures/marek-pavlik-l-9Zg-QsPQE-unsplash.jpg"
+exec "feh --bg-fill Downloads/marek-pavlik-l-9Zg-QsPQE-unsplash.JPG"
 exec --no-startup-id xsetroot -cursor_name left_ptr
 
 #exec "feh --bg-fill /home/danish/Pictures/wallhave-shinchan.jpg"

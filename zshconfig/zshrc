@@ -36,19 +36,19 @@ export PATH="$JAVA_HOME/bin:$M2_HOME/bin:$PATH"
 
 # ─── Conda Initialization ─────────────────────────────
 #Fix for "conda is an alias" issue
-unalias conda 2>/dev/null
-
-__conda_setup="$('/home/danish/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/danish/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/danish/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/danish/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+#unalias conda 2>/dev/null
+#
+#__conda_setup="$('/home/danish/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/danish/miniconda3/etc/profile.d/conda.sh" ]; then
+#        . "/home/danish/miniconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/home/danish/miniconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
 
 
 
@@ -105,26 +105,20 @@ export ZSH_TMUX_TERM=screen-256color
 # ─── Aliases ───────────────────────────────────────────
 alias cl='clear'
 alias home='cd ~'
-alias zshvim='cd ~ && nvim .zshrc'
+alias zshvim='cd Documents/dotConfigFiles/zshconfig && nvim zshrc'
 alias resource='source ~/.zshrc'
-alias spring='cd ~/Documents/Projects/springUdemy/ && nvim'
 alias configvim='cd ~/.config/nvim/ && nvim'
 alias condaenv='conda info --env'
-alias condabase='conda deactivate && conda activate base'
 alias st='speedtest-cli'
-alias mvnc='mvn compile'
 alias gits='git status'
 alias gita='git add .'
 alias gitcm='git commit'
 alias gitps='git push -u origin main'
-alias i3bind='cat ~/Documents/LinuxCommandAndKeyBinds/keyBindsi3.txt'
-alias aptpac='cat ~/Documents/LinuxCommandAndKeyBinds/apt_to_pacman_commands.txt'
-alias mountmech='cd ~ && ./.mount.sh'
-alias task='cd ~ && ./taskell'
-alias taskm='cd ~ && ./taskell Documents/tasks/mangrove.md'
-alias ideash='cd ~/Documents/zipAndApps/idea-IC-251.27812.49/bin/ && ./idea.sh'
-alias jscode='cd ~/Documents/Projects/jsCodes && nvim'
 alias servenow='python -m http.server 8000'
+alias tma='tmux attach'
+alias tmd='tmux detach'
+alias tmls='tmux ls'
+
 
 
 # ─── NVM ───────────────────────────────────────────────
