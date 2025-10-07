@@ -172,7 +172,8 @@ bar {
 for_window [class=".*"] border pixel 1
 
 # Set focused/unfocused border colors (override blue indicator)
-client.focused              #f5cda7 #f5cda7 #f5cda7 #f5cda7  
+client.focused               #ebbcba #ebbcba #ebbcba #ebbcba             
+#client.focused               #f5cda7 #f5cda7 #f5cda7 #f5cda7  
 #client.focused              #cf4b50 #cf4b50 #cf4b50 #cf4b50  
 
 # accnet blue
