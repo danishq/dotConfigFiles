@@ -120,7 +120,14 @@ alias tmls='tmux ls'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 export PATH="$HOME/nvim-linux-x86_64/bin:$PATH"
 export PATH="$HOME/flutter/bin:$PATH"
 export PATH="/opt/android-studio/bin:$PATH"
+
+# -- Better CD command
 eval "$(zoxide init zsh)"
+
+#TMUX Auto
+tmux attach -t Main
+
