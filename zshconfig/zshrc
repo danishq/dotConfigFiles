@@ -27,6 +27,7 @@ export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # Use system default Java (currently Java 21)
 export JAVA_HOME=/usr/lib/jvm/default
+#export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export M2_HOME=/opt/apache-maven
 export PATH="$JAVA_HOME/bin:$M2_HOME/bin:$PATH"
 
@@ -115,6 +116,8 @@ alias servenow='python -m http.server 8000'
 alias tma='tmux attach'
 alias tmd='tmux detach'
 alias tmls='tmux ls'
+alias fl='z flip'
+alias gitpass='adfl12!@QW'
 
 # ─── NVM ───────────────────────────────────────────────
 export NVM_DIR="$HOME/.nvm"
