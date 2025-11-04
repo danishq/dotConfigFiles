@@ -1,0 +1,61 @@
+register -> request
+shopify -> core -> study (webhook)
+
+Tech Stack
+    Framework: Remix (React-based full-stack framework)
+    Language: TypeScript
+    Database: Prisma ORM with PostgreSQL
+    Shopify Integration: @shopify/shopify-app-remix (v3.0.2)
+    API Version: Shopify Admin API 2025-01
+    Distribution: App Store (non-embedded app)
+
+Directory Structure :
+
+    1. core layer
+        Resource:
+            checkout/
+            customers/
+            discounts/
+            orders/
+            products/
+
+        each resource contains:
+            api.ts
+            model
+            webhook
+            services/
+                adflipr.ts
+                shopify
+                index
+
+            core utilities
+                search.ts
+                web-pixel
+                webhooks
+
+
+Merchant adds customer in Shopify
+    ↓
+Shopify sends CUSTOMERS_CREATE webhook
+    ↓
+webhook.ts handler receives it
+    ↓
+Calls shopify.ts service
+    ↓
+Forwards to AdFlipr backend
+    ↓
+AdFlipr syncs customer data
+
+adflipr -> enter shopify shop -> shopify portal -> redirect back to adflipr -> adflipr will connect to shopify
+user logged in user not logged in
+checkout/order/customers/discount/product
+
+shopify provision of webhook
+as soon shop connect -> register webhook
+
+difference in embedded as non embedded shopify app remix
+billing@adflipr.com
+
+remix is a shopify framework -> used in shopify
+auth2.0
+shedular picks from 
