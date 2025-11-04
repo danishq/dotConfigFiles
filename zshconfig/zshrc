@@ -134,3 +134,4 @@ export PATH="/opt/android-studio/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
