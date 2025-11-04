@@ -1,0 +1,28 @@
+The primary method for checking RAM health and identifying bad cells (errors) in Windows 11 is using the built-in Windows Memory Diagnostic tool. 
+Using the Windows Memory Diagnostic Tool 
+This tool requires a system restart to run its tests. 
+1. Access the tool:
+Via Search: Open the Start menu, type Windows Memory Diagnostic, and select the app from the results.
+Via Run command: Press the Windows key + R, type mdsched.exe, and press Enter. 
+2. Run the test:
+A window with two options will appear: 
+Restart now and check for problems (recommended): This will immediately restart your computer and begin the test. Be sure to save all your work and close any running programs before selecting this option.
+Check for problems the next time I start my computer: This schedules the test for your next manual restart. 
+3. The testing process:
+After the restart, your computer will boot into a blue screen environment and the diagnostic tool will run automatically in "Standard" mode.
+The test may take several minutes or longer depending on your RAM capacity and speed. You can press the F1 key to change test options (Basic, Standard, Extended) or the pass count if a more in-depth scan is desired.
+The screen will display the test progress and status (whether problems have been detected). 
+4. Review the results:
+Once the test is complete, the PC will automatically restart and boot back into Windows.
+A notification will usually appear on the taskbar with the results.
+If you miss the notification, you can find the detailed results in the Event Viewer:
+Open the Start menu and type Event Viewer to open the application.
+In the left pane, expand Windows Logs and select System.
+Right-click on System and select Find.
+Type MemoryDiagnostics-Results in the find box and click Find Next. The results will indicate if any errors were found. A result of "pass" means the memory is functioning correctly. 
+If Errors are Found
+If the diagnostic tool detects errors, it usually indicates a physical problem with one or more RAM modules. The recommended steps are: 
+Run the test again using the Extended mode to confirm the error.
+Physically test individual RAM sticks by removing all but one module and re-running the diagnostic to isolate the faulty stick.
+Replace the defective RAM module(s). 
+For a more comprehensive, in-depth test that runs outside the Windows OS, you can use a third-party tool like MemTest86. This requires creating a bootable USB drive and changing the boot order in your computer's BIOS. 
