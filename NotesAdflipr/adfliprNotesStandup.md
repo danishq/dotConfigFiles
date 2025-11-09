@@ -123,9 +123,23 @@
         2. added domain/list api
         3. order total api bug 
 
+> 2025-11-09
+ 
+    Fix:
+        1. 
+        _id , 6772d006174c68760eb0835a , userId , "6772cf9981908252c6a8cd3c" , email , "this.that@ronaldo.com" , firstName , "This" , lastName , "That" , source , 
+        "SHOPIFY" , isDeleted , false , sourceId , "gid://shopify/Customer/7467847155895" , 
+        *isOrderSynced* , #true# , , orderDetails , Object , 
+        created , 2024-12-30T16:53:26.347+00:00 , updated , 2025-04-07T11:26:28.891+00:00 , _class , 
+        "com.goveca.recruit.ad.model.Contact" , count , 100 , 
+        update , 4 , 
+        2. Working on 86d0wptqq
 
-
-
+         .../src/main/java/com/goveca/recruit/ad/controller/UnifiedSearchController.java  |  52 +++++++
+         service/src/main/java/com/goveca/recruit/ad/request/UnifiedSearchRequest.java    |  25 ++++
+         service/src/main/java/com/goveca/recruit/ad/resource/GenericFilterRequest.java   |  32 ++++-
+         service/src/main/java/com/goveca/recruit/ad/service/ContactService.java          |   4 +-
+         service/src/main/java/com/goveca/recruit/ad/service/UnifiedSearchService.java    | 177 ++++++++++++++++++++++++
 
 # Google Meet Notes :
 
