@@ -146,7 +146,7 @@ bar {
    #font pango: BitcountGridSingle Light 11
    #font pango: BitcountGridSingle Light 11
    #font pango: BitcountGridSingle_Roman Light 11
-   font pango: Exo Bold 11
+   font pango: Exo Bold 14
    #font pango: Exo Regular 10
    #font pango: Syncopate Regular 10
    #font pango: MesloLGS Regular 10 
@@ -154,7 +154,8 @@ bar {
    
    colors {
 #       background         #cf4b50          #$bg_dark         # dark coffee (bar background)
-        background         #250001          #$bg_dark         # dark coffee (bar background)
+#       background         #250001          #$bg_dark         # dark coffee (bar background)
+        background         #1c0921          #$bg_dark         # dark coffee (bar background)
         #234d70
         statusline         $text_active     # light pastel (text)
         separator          $text_active     # separator color

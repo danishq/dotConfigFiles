@@ -95,15 +95,6 @@
           "type": "python"
         },
         {
-          "background": "#234d70",
-          "foreground": "#d6deeb",
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": "\ue266 {{ round .PhysicalPercentUsed .Precision }}% ",
-          "trailing_diamond": "\ue0d6",
-          "type": "sysinfo"
-        },
-        {
           "background": "#ffffff",
           "foreground": "#ce092f",
           "leading_diamond": "\ue0b2",
