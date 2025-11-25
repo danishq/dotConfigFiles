@@ -26,10 +26,9 @@ add-zsh-hook zshexit save_history
 export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # Use system default Java (currently Java 21)
-export JAVA_HOME=/usr/lib/jvm/default
-#export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-export M2_HOME=/opt/apache-maven
-export PATH="$JAVA_HOME/bin:$M2_HOME/bin:$PATH"
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export PATH="$JAVA_HOME/bin:$PATH"
+
 
 # ─── Conda Initialization ─────────────────────────────
 #Fix for "conda is an alias" issue
@@ -132,6 +131,3 @@ export PATH="/opt/android-studio/bin:$PATH"
 
 # -- Better CD command
 eval "$(zoxide init zsh)"
-
-
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk

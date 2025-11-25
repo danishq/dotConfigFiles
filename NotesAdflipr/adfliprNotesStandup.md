@@ -134,12 +134,8 @@
         "com.goveca.recruit.ad.model.Contact" , count , 100 , 
         update , 4 , 
         2. Working on 86d0wptqq
-
-         .../src/main/java/com/goveca/recruit/ad/controller/UnifiedSearchController.java  |  52 +++++++
-         service/src/main/java/com/goveca/recruit/ad/request/UnifiedSearchRequest.java    |  25 ++++
-         service/src/main/java/com/goveca/recruit/ad/resource/GenericFilterRequest.java   |  32 ++++-
-         service/src/main/java/com/goveca/recruit/ad/service/ContactService.java          |   4 +-
-         service/src/main/java/com/goveca/recruit/ad/service/UnifiedSearchService.java    | 177 ++++++++++++++++++++++++
+        3. Shopify Contact import more than 3
+        4. 
 
 # Google Meet Notes :
 
