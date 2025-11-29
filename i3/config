@@ -5,12 +5,12 @@ font pango:Victor Mono 8
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id sh -c "sleep 1"
-exec "feh --bg-fill Downloads/marek-pavlik-l-9Zg-QsPQE-unsplash.JPG"
 exec --no-startup-id xsetroot -cursor_name left_ptr
 
 #exec "feh --bg-fill /home/danish/Pictures/wallhave-shinchan.jpg"
 
 
+exec --no-startup-id ~/initSet.sh
 exec --no-startup-id xsetroot -cursor_name left_ptr
 exec_always --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id blueman-applet
@@ -34,7 +34,7 @@ set $term kitty
 bindsym $mod+Return exec $term 
 bindsym $mod+Shift+q kill
 #bindsym Mod1+space exec rofi -show drun 
-bindsym Mod1+space exec --no-startup-id ~/.config/rofi/launchers/type-3/launcher.sh
+bindsym Mod1+space exec --no-startup-id ~/.config/rofi/launchers/type-7/launcher.sh
 
 # Vim-style navigation
 bindsym $mod+h focus left
@@ -73,7 +73,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Workspaces
-set $ws0 "0"
+#set $ws0 "0"
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -87,7 +87,7 @@ set $ws10 "10"
 set $ws11 "11"
 set $ws12 "12"
 
-bindsym $mod+q workspace number $ws0
+#bindsym $mod+q workspace number $ws0
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -101,7 +101,7 @@ bindsym $mod+0 workspace number $ws10
 bindsym $mod+o workspace number $ws11
 bindsym $mod+p workspace number $ws12
 
-bindsym $mod+Shift+'[' move container to workspace number $ws0
+#bindsym $mod+Shift+'[' move container to workspace number $ws0
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -114,6 +114,8 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+o move container to workspace number $ws11
 bindsym $mod+Shift+p move container to workspace number $ws12
+
+bindsym $mod+q workspace number 0
 
 # Config reload/restart
 bindsym $mod+Shift+c reload
@@ -148,11 +150,13 @@ set $text_dull          #ffffff
 set $text_light         #7fffd6
 set $accent_blue        #156a7e
 set $bg_block           #31342d
+set $urgent_red         #900000
 set $border_unfocused $text_light
 
 # i3bar
 bar {
    status_command i3blocks
+   workspace_buttons yes
    #font pango: BitcountGridSingle Light 11
    #font pango: BitcountGridSingle Light 11
    #font pango: BitcountGridSingle_Roman Light 11
