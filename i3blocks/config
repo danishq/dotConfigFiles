@@ -53,7 +53,7 @@ color=#f9e7e7
 
 [time]
 label=   
-command=date '+%a %d %b  %I:%M %p '
-interval=6
+command=date '+%a %d %b  %I:%M %p | '
+interval=1
 color=#f9e7e7
 
