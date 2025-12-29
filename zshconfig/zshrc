@@ -117,7 +117,6 @@ alias tma='tmux attach'
 alias tmd='tmux detach'
 alias tmls='tmux ls'
 alias fl='z flip'
-alias gitpass='adfl12!@QW'
 alias ll='ls -l'
 alias ldr='ls -l | grep drw'
 
