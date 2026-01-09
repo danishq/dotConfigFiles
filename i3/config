@@ -169,8 +169,9 @@ bar {
    colors {
 #       background         #cf4b50          #$bg_dark         # dark coffee (bar background)
 #       background         #250001          #$bg_dark         # dark coffee (bar background)
-        background         #1c0921          #$bg_dark         # dark coffee (bar background)
-        #234d70
+#       background         #1c0921          #$bg_dark         # dark coffee (bar background)
+        background         #000000          #$bg_dark         # dark coffee (bar background)
+
         statusline         $text_active     # light pastel (text)
         separator          $text_active     # separator color
 
